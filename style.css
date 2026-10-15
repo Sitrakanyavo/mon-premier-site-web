@@ -1,0 +1,133 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    background: linear-gradient(135deg, cccccccc#d9f94b, #974b4c);
+;
+    color: #000000;
+    margin: 0;
+}
+
+header {
+    background-color: #9ecef0;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+main {
+    width: 80%;
+    margin: 30px auto;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+}
+button {
+    background: linear-gradient(45deg, #3107bc, #ff2462);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+h1 {
+    animation: apparition 1.5s ease-in-out;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 20px;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+/*Amélioration du menu*/ nav{
+    padding: 15px;
+    text-align: center;
+}
+/*Apparence des liens*/nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    display: inline-block;
+    transition: 0.3s;
+    border-radius: 6px;
+}
+/*Effet au survol*/ nav a:hover {
+background-color: gold;color: #3107bc;
+}
+/*Les images s'adaptent à leur conteneur*/ img{
+    max-width:100% ;height: auto;
+}
+/*Eviter les débordements*/*{
+    box-sizing: border-box;
+}
+/*Adaptation aux téléphones*/@media screen and (max-width:600px){
+    /*Titre principal*/
+    header h1{ front-size: 26px}
+    /*Texte de présentation*/header p { font-size: 14px; padding: 0 10px;}
+    /*Menu de navigation*/nav a { 
+        display: inline-block;
+        padding: 10px;
+        font-size: 14px;
+    }
+    /*Contenu principal*/main{ padding: 15px;}
+    /*Titres des sections*/h2{font-size: 22px;}
+    /*Photo de présentation */img
+}
